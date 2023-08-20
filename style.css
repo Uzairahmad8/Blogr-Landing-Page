@@ -1,0 +1,432 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.smallContainer {
+  max-width: 540px;
+}
+
+.mediumContainer {
+  max-width: 1440px;
+}
+
+.largeContainer {
+  max-width: 1550px;
+}
+
+.imageContainer {
+  max-width: 885px;
+}
+
+.marginAuto {
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.justifyBetween {
+  justify-content: space-between;
+}
+
+.justifyEnd {
+  justify-content: end;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.semiBoldFont {
+  font-weight: 600;
+}
+
+.boldFont {
+  font-weight: 700;
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.white {
+  color: #fff;
+}
+
+.mainFontColor {
+  color: #274762;
+}
+
+.positionAbsolute {
+  position: absolute;
+}
+
+.positionRelative {
+  position: relative;
+}
+
+.displayNone {
+  display: none;
+}
+
+.listStyleNone {
+  list-style: none;
+}
+
+.dropDownItems {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropDownItems a {
+  color: #000;
+  text-decoration: none;
+}
+
+.headerContainer {
+  background-image: url("images/headerBackgroundImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 100px;
+}
+
+.header {
+  padding: 60px 80px;
+}
+
+.navbarDropDown {
+  gap: 64px;
+}
+
+.navbarList,
+.navbarCTA {
+  gap: 32px;
+}
+
+.productItems,
+.connectItems {
+  top: 40px;
+  left: -20px;
+}
+
+.companyItems {
+  top: 40px;
+  left: 0;
+}
+
+.dropDown {
+  padding-bottom: 5px;
+  gap: 8px;
+  position: relative;
+}
+
+.dropDown::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.dropDown:hover::after {
+  width: 100%;
+}
+
+.navbarBtn {
+  padding: 15px 40px;
+  border: none;
+  border-radius: 30px;
+  color: #ff505c;
+  background-color: #fff;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+}
+
+.navbarBtn:hover,
+.startBtn:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.headerContent {
+  max-width: 920px;
+  margin: 150px auto;
+}
+
+.headerContent h1 {
+  font-size: 64px;
+}
+
+.headerContent p {
+  font-size: 20px;
+  margin: 30px auto;
+}
+
+.headerBtn {
+  padding: 15px 18px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+}
+
+.learnMoreBtn {
+  background-color: transparent;
+  transition: all 0.5s;
+}
+
+.startBtn {
+  transition: all 0.5s;
+}
+
+.learnMoreBtn:hover {
+  background-color: #fff;
+  color: #ff505c;
+}
+
+.headerBtnContainer {
+  justify-content: center;
+  gap: 16px;
+}
+
+.sectionTwo {
+  margin-block: 70px;
+}
+
+.sectionTwoInnerContainer {
+  padding-left: 100px;
+  gap: 125px;
+  position: relative;
+}
+
+.sectionTwoHeading {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, 10px);
+}
+
+.sectionTwoImg {
+  align-self: baseline;
+  max-width: 642px;
+}
+
+.sectionTwoContent h3,
+.sectionFour h3 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.sectionTwoContent p,
+.sectionFour p {
+  margin-bottom: 64px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+
+.sectionThree {
+  background: linear-gradient(135deg, #2d2e40 0%, #3f4164 100%);
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  justify-content: center;
+  margin-block: 60px;
+  padding-inline: 50px;
+  gap: 100px;
+  height: 400px;
+  position: relative;
+}
+
+.sectionThreeImg {
+  position: relative;
+  z-index: 2;
+}
+
+.sectionThreeBgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.sectionThree h3 {
+  font-size: 36px;
+}
+
+.sectionThree p {
+  margin-top: 10px;
+  line-height: 28px;
+  word-spacing: 0.5px;
+}
+
+.sectionFour {
+  margin-block: 100px;
+  gap: 125px;
+  padding-right: 50px;
+}
+
+.footer {
+  background-color: #24242c;
+  border-top-right-radius: 100px;
+}
+
+.footerContent {
+  max-width: 1100px;
+  padding: 70px 50px;
+  align-items: flex-start;
+}
+
+.footerContent h5 {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.footerContent ul {
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+.footerContent ul a {
+  font-size: 14px;
+  opacity: 0.6;
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 2px;
+  position: relative;
+}
+
+.footerContent ul a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.footerContent ul a:hover::after {
+  width: 100%;
+}
+
+/* DropDown Item for Navbar */
+#productMenu,
+#companyMenu,
+#connectMenu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#productMenu:checked ~ .productItems,
+#companyMenu:checked ~ .companyItems,
+#connectMenu:checked ~ .connectItems {
+  display: block;
+}
+
+.fa-chevron-down {
+  transition: all 0.5s;
+}
+
+#productMenu:checked ~ p .fa-chevron-down,
+#companyMenu:checked ~ p .fa-chevron-down,
+#connectMenu:checked ~ p .fa-chevron-down {
+  rotate: 180deg;
+}
+
+.dropDownItems li {
+  margin-bottom: 10px;
+}
+
+.dropDownItems li:hover {
+  font-weight: 700;
+}
+
+.navLinkPara {
+  gap: 10px;
+}
+
+/* Mobile Navbar */
+
+.mobileHamburger {
+  flex-direction: column;
+  gap: 6px;
+  width: max-content;
+}
+
+.mobileHamburger input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.mobileHamburger input,
+.mobileHamburger::before,
+.mobileHamburger::after {
+  content: "";
+  background: #fff;
+  height: 3px;
+  width: 32px;
+  transform-origin: left center;
+  transition: opacity 0.3s, width 0.3s, rotate 0.3s, translate 0.3s;
+}
+
+.mobileHamburger input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.mobileHamburger:has(input:checked)::before {
+  rotate: 45deg;
+  translate: 0 -2px;
+}
+
+.mobileHamburger:has(input:checked)::after {
+  rotate: -45deg;
+  translate: 0 2px;
+}
+
+/* Mobile Navbar Button */
+
+.mobileNavCTA {
+  border-top: 1px solid #979797;
+  padding-top: 24px;
+}
+
+.mobileNavCTA p {
+  text-align: center;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.mobileNavBtn {
+  color: #fff;
+  background: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
+  border: none;
+  border-radius: 28px;
+  padding: 15px 40px;
+}

@@ -1,0 +1,205 @@
+@media (max-width: 1200px) {
+  .sectionTwoInnerContainer {
+    gap: 100px;
+    padding-left: 50px;
+  }
+
+  .sectionTwoImageContainer,
+  .sectionFourImgContainer {
+    max-width: 700px;
+  }
+
+  .sectionTwoImg,
+  .sectionFourImg {
+    width: 100%;
+  }
+
+  .sectionTwoHeading {
+    top: 0;
+    width: max-content;
+  }
+
+  .sectionFour {
+    gap: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .sectionTwoInnerContainer,
+  .sectionFour {
+    flex-grow: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-inline: 50px;
+  }
+
+  .sectionTwoInnerContainer {
+    margin: 150px auto 280px auto;
+  }
+
+  .sectionTwoHeading {
+    top: -70px;
+    left: 52%;
+  }
+
+  .sectionFour {
+    flex-direction: column;
+  }
+
+  .smallContainer {
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .sectionThree {
+    margin-top: 100px;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .sectionThreeImg {
+    top: -255px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    align-items: center;
+  }
+
+  .header {
+    padding: 40px;
+  }
+
+  .headerContent h1 {
+    font-size: 50px;
+  }
+
+  .navbarCTA,
+  .navbarList {
+    display: none;
+  }
+
+  .mobileHamburger {
+    display: flex;
+  }
+
+  .mobileNavCTA {
+    display: block;
+  }
+
+  .navbarList {
+    display: none;
+    flex-direction: column;
+    color: #000;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 83%;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    left: 9%;
+  }
+
+  .mobileHamburger:has(input:checked) ~ .navbarList {
+    display: flex;
+  }
+
+  .navbarList i {
+    color: #ff7b86;
+  }
+
+  .dropDown {
+    flex-direction: column;
+  }
+
+  .productItems,
+  .companyItems,
+  .connectItems {
+    background-color: #c3c3c3;
+    padding: 25px 50px;
+    text-align: center;
+    position: static;
+  }
+
+  .sectionThreeContent {
+    margin-top: -350px;
+  }
+
+  .sectionThreeBgImg {
+    left: 50%;
+    translate: -50%;
+  }
+
+  .mobileNav {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbarDropDown {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerContent {
+    margin-block: 50px;
+  }
+
+  .headerContent h1 {
+    font-size: 34px;
+  }
+
+  .sectionTwoContent h3 {
+    font-size: 24px;
+  }
+
+  .sectionThreeImg {
+    height: 347px;
+    top: -200px;
+  }
+
+  .sectionThreeContent {
+    margin-top: -200px;
+    padding-bottom: 50px;
+  }
+
+  .navbarList {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header,
+  .sectionTwoInnerContainer,
+  .sectionFour {
+    padding-inline: 24px;
+  }
+
+  .sectionThree {
+    padding-inline: 30px;
+  }
+
+  .sectionTwoContent p,
+  .sectionThree p {
+    font-size: 14px;
+  }
+
+  .sectionTwoHeading {
+    top: -85px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
