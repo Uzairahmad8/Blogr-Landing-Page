@@ -101,6 +101,7 @@
     position: absolute;
     top: 15%;
     left: 9%;
+    z-index: 2;
   }
 
   .mobileHamburger:has(input:checked) ~ .navbarList {
